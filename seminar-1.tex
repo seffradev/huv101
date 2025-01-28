@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, total={16cm, 22cm}]{geometry}
+\usepackage{parskip}
+\usepackage[swedish]{babel}
+\usepackage{csquotes}
+\usepackage[natbib=true, style=numeric, sorting=none]{biblatex}
+
+\addbibresource{references.bib}
+
+\title{Artificiell intelligens, en diskussion om miljövänlighet och potentiella
+tillämpningar}
+\author{Hampus Avekvist}
+
+\begin{document}
+
+\maketitle
+
+2022 slog företaget OpenAI igenom med sin stora språkmodell (egenöversättning
+från large language model, LLM) ChatGPT \cite{chatGpt}. Den agerar likt en
+chattbot, dock med en större kunskapsbas än tidigare, och ett
+konversationsorienterat kommunikationssätt, vilket gör tjänsten tillgänglig
+för gemene person. Diverse tjänster under paraplyfrasen artificiell intelligens
+(AI) har funnits i flera år (myntandet av datorintelligens attribueras till
+Alan Turing redan år 1947 \cite{historyOfAI}). De har i allmänhet utvecklats
+för särskilda användningsområden, men ChatGPT slog igenom bland de bredast
+tillgängliga. Det finns även nischade AI-verktyg som för programmering
+\cite{copilot, tabnine} och bildgenerering \cite{dall-e, midjourney}. Verktygen
+lämpar sig väl till att assistera och förenkla i vardagen, vilket gjort
+tjänsterna populära. Dock, som konsekvens av bred användning, vad är
+koldioxidavtrycket från dessa tjänster? Hur kan de blir mer miljövänliga?
+
+Bruket av AI-verktyg, trots energianvändningen för deras drift, kan anses
+värdefullt eftersom kompetenskapitalet växer. Om man, som i svag hållbarhet
+\cite[15]{gullikssonHolmgren}, ser kompetensen som en resurs som väger upp
+för verktygens utsläpp, i sammanhang som förhöjd produktivitet där varje
+människa kan åstadkomma mer på kortare tid, så innebär vidareutvecklingen
+av tjänsterna enbart goda ting. I \cite{carbonFootprintOfChatGpt} framgår
+det (innan uppdateringen 2023-03-20) att CO$_2$-ekvivalenterna från ChatGPT
+estimerades till 8.4 ton per år, dock efter artikeluppdateringen kan (med
+enkla beräkningar i samma antaganden) ekvivalenterna uppnå 15225 ton per år.
+Dessa mätningar gäller enbart för ChatGPT så tidigare nämnda tjänster bör
+tas i beaktning i heltäckande argument. Här används enbart ChatGPT för att
+illustrera tillväxten av användningen av denna typ av tjänster. Vid träning
+av modeller som ChatGPT-3 och ChatGPT-4 nämns det i
+\cite{environmentalImpactOfChatGpt} att estimerat 700 000 liter färskvatten
+använts för de datacenter som modellerna tränats i. Då modellerna växer och
+mer data används för träning är det osannolikt att förbrukningen minskar,
+såvida metoderna inte förändras.
+
+Ur en stark hållbarhetssynpunkt \cite{gullikssonHolmgren} bör modellerna
+tränas enbart från förnybara energikällor. Detta är möjligt, om än i en
+mindre skala. Dock utförs arbeten för stora helt hållbara datacenter, exempelvis
+Googles, som siktar på ``net-zero carbon'' 2030 \cite{googleNetZeroCarbon}.
+Vattenförbrukningen, som tidigare nämnt är relevant i dessa sammanhang, för
+deras tjänster adresseras i \cite{googleWaterStewardship} som också siktar på
+2030. Det innebär däremot att Google, inte utan att nyttja lagerresurser
+\cite[16]{gullikssonHolmgren}, är redo att bedriva AI-verktyg i deras datacenter
+innan 2030.
+
+Det som poängterats hittills är att AI-verktyg blir mer populära, dock med
+konsekvensen att de släpper ut mer i samband med att de skalar upp. Det följer
+inte principerna för stark hållbarhet \cite[15]{gullikssonHolmgren}. Däremot
+kan det inom kontextet för svag hållbarhet \cite[15]{gullikssonHolmgren} väga
+upp som tidigare nämnt i kompetenskapital. Verktygen kan särskilt väga upp för
+sina utsläpp om de används för att hitta lösningar på klimatproblemen och kan
+effektivisera exempelvis transporter och industrier. Om AI används för att
+optimera transport- och industrisektorerna åtminstone en procent (följande
+tidigare beräkning och jämför med tabell 6.2 \cite[265]{gullikssonHolmgren})
+kommer AIs \textit{energy returned on energy invested} (EROEI) redan
+kompenserats för.
+
+Sammanfattningsvis, AI växer i popularitet och kan användas för att höja
+produktiviteten. Det leder dock till höjda utsläpp som kan mitigeras via
+miljövänliga datacenter, som Googles initiativtagande. Däremot, redan nu,
+om dessa verktyg och tjänster även används för att optimera stora
+utsläpps-sektorer som transport och industri, där deras egen förbrukning kan
+vägas upp, så ser redskapen ut som något bra som bör stanna för en mer hållbar
+värld.
+
+\printbibliography
+
+\end{document}

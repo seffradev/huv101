@@ -11,6 +11,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: pdflatex --shell-escape seminar-1 && biber seminar-1 && pdflatex --shell-escape seminar-1
+      - run: pdflatex --shell-escape seminar-2 && biber seminar-2 && pdflatex --shell-escape seminar-2
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1
         with:

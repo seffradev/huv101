@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, total={16cm, 22.5cm}]{geometry}
+\usepackage{parskip}
+\usepackage[swedish]{babel}
+\usepackage{csquotes}
+\usepackage[natbib=true, style=numeric, sorting=none]{biblatex}
+
+\addbibresource{references.bib}
+
+\title{Informationsteknik och vattenrening -- idéer om dataingenjörens del }
+\author{Hampus Avekvist}
+
+\begin{document}
+
+\maketitle
+
+Människans förbrukning av miljön är inte hållbar. Vi svenskar
+har ett ekologiskt avtryck som motsvarar ungefär fyra jordklot
+\cite[262-263]{gullikssonHolmgren}. Något vi har gott om än så
+länge är färskt vatten, något som inte är en självklarhet för
+resten av världen \cite[276]{gullikssonHolmgren}. Det finns
+möjligheter att förbättra kvaliteten av vatten och åtkomsten
+till de länder där det behövs, bland annat med datateknik och
+allmän informationsteknik (IT). Därför ämnar denna text att
+utforska vattenrening i ett sammanhang med IT och går sedan
+djupare in i hållbarheten gällande IT som helhet.
+
+\paragraph{Vattenrening}
+
+Google har som mål att rena 120\% av vattnet de förbrukar för
+driften av deras datahallar och kontor
+\cite{googleWaterStewardship}. Det försöker de uppnå bland annat
+genom att ta hänsyn till vad för vattenanvändande faciliteter de
+installerar (exempelvis toaletter och kranar) som är uttänkt
+effektivare. De ser även till att främst använda vatten som inte
+går att använda i hygieniska situationer som matlagning och
+rengöring, när de kyler sina hallar. 
+
+Dock, från en dataingenjörs perspektiv, är det viktigaste Google
+gör att arbeta datadrivet \cite{googleWaterStewardship}. Att
+arbeta datadrivet innebär att beslut fattas från mätdata och inte
+på grund av andra källor som trender och upplevelser. Ett
+datadrivet arbetssätt går att anamma genom installation av
+internet of things (IoT)-enheter som samlar relevant data att
+bearbeta.
+
+Exempel på data att samla är vattenförbrukning, vattenkvalité och
+temperaturen i datahallar kontra temperaturen utomhus. Genom att
+låta insamlad data processas av artificiell intelligens (AI) kan
+förslag automatiskt föreslås och diskuteras för bättre
+miljöanpassning. 
+
+Dataingenjörer behövs i dessa sammanhang, både för att konstruera
+IoT-sensorerna och nätverken, men även för att designa
+AI-modellerna. Vidare kan beslut från AI-förslag tas automatiskt
+där det krävs ett mjukvarukoppel också utvecklat av dessa
+ingenjörer. Som \cite[282]{gullikssonHolmgren} säger, IT kan
+nyttjas för automatisering, särskilt i dessa fall för ökad
+hållbarhet.
+
+\paragraph{Informationsteknik}
+
+2008 stod IT för 2-2.5\% av världens totala koldioxidutsläpp
+\cite[283]{gullikssonHolmgren}. Branschen har vuxit samtidigt som
+tekniken har blivit effektivare, så estimat (inkluderande
+underhållning och media, E\&M) hamnar på 2.6\% där 1.4\% är
+för just information- och kommunikationsteknologi
+\cite{ictFootprints}. Distinktionen framgår inte i
+\cite[283]{gullikssonHolmgren} om det räknar med E\&M-sektorn så
+fortsättningsvis exkluderas det även ur siffror från
+\cite{ictFootprints}.
+
+Utöver mål att bli ``kolfria'' genom alternativa energikällor,
+som Googles \textit{net-zero carbon} \cite{googleNetZeroCarbon},
+kan mjuk- och hårdvaruprocesser i sig själva effektiviseras. Det
+finns exempelvis \textit{green software} som syftar till att göra
+mjukvara miljövänligt \cite{greenSoftwareFoundation}. Den
+generella tanken kring miljövänlig mjukvara är att göra mindre.
+I en form ska kod vara optimerad så färre CPU-cykler och
+därav mindre energi krävs för att utföra en uppgift. En annan
+form, fortfarande i spåret att göra mindre, är att stänga av
+maskiner (skala ner) när de inte behövs och starta igen (skala
+upp) när de behövs. Då är datorer inte igång utan anledning.
+En extremare variant är att enbart drifta tjänster när energin
+maskinerna använder är från förnybara källor. Detta går att
+automatisera med Carbon Aware SDK \cite{carbonAwareSdk} från
+Green Software Foundation.
+
+Hittills har enbart ekologiska aspekter för informationstekniken
+diskuterats. Ämnet är större än så, där resten av detta arbete
+kommer diskutera den sociala påverkan av IT och avstår det
+ekonomiska för att illustrera det moraliska och etiska ansvar
+dataingenjörer har. IT främjar informationsspridning men en fråga
+ställs i \cite[284]{gullikssonHolmgren}: Vem får vara med? En
+annan fråga att ställa är: Vad får vara med? Dessa frågor öppnar
+för diskussion om censur och begränsningar, samt på vilka villkor
+får man delta?
+
+IT och särskilt internet öppnar möjligheten att få svar på nästan
+vad som helst inom ett par sekunder. Däremot drivs de flesta
+tjänster och system av privata aktörer som har makten att själva
+välja vad som ska synas och inte. För att behålla ett öppet och
+neutralt internet behöver utvecklarna för dessa tjänster ta ett
+ställningstagande och stå för att hålla yttrandefriheten stark
+och kämpa emot företagsbeslut att implementera censurerande
+verktyg. Om en dataingenjör ska utföra ett hållbart arbete bör
+socialt hållbara politiska åsikter genomsyra tjänster och
+produkter som utvecklas, även om det kan leda till en uppsägning.
+
+\printbibliography
+
+\end{document}
